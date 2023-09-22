@@ -1,13 +1,67 @@
-html {
-  background: #ddd;
-  height: 100%;
-  display: flex; /* //La propiedad CSS flex es una propiedad resumida que indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. Los elementos flexibles pueden ser estirados para utilizar el espacio disponible proporcional a su factor de crecimiento flexible o su factor de contracción flexible para evitar desbordamiento. */
-}
-body{
-  width: 100%;
-  margin: auto;
-}
-.App {
-  font-family: sans-serif;
-  text-align: center;
-}
+/* reset default style */
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+  
+  
+  html {
+    background: #ddd;
+    height: 100%;
+    display: flex;
+    /* //La propiedad CSS flex es una propiedad resumida que indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. Los elementos flexibles pueden ser estirados para utilizar el espacio disponible proporcional a su factor de crecimiento flexible o su factor de contracción flexible para evitar desbordamiento. */
+  }
+  
+  body {
+    width: 100%;
+    margin: auto;
+  }
+  
+  .App {
+    background: white;
+    font-family: sans-serif;
+    text-align: center;
+    border: 1px solid black;
+    height: 100vh;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  @media (max-width: 500px) {
+    .App {
+      border: none;
+      height: 100vh;
+      max-width: 100%;
+    }
+  }
+  
+  .todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 10px;
+  }
+  
+  .text {
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .button {
+    background: #ddd;
+    border: 1px solid black;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+  }
