@@ -71,3 +71,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### install SAAS
 npm install node-sass
+if it doesn´t works,  try:
+npm install --save-dev webpack
+npm add sass-loader@^10.1.1
